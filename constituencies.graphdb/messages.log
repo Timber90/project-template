@@ -1576,3 +1576,13 @@ Storage files: (filename : modification date - size)
 2016-04-09 20:37:58.767+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-04-09 20:37:58.767+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
 2016-04-09 20:40:20.002+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 293ms.
+2016-04-09 20:42:58.792+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting check pointing...
+2016-04-09 20:42:58.792+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting store flush...
+2016-04-09 20:42:58.797+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 56 to [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.b], from [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.a].
+2016-04-09 20:42:58.799+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 56 to [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.b], from [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.a].
+2016-04-09 20:42:58.807+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Store flush completed
+2016-04-09 20:42:58.808+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Starting appending check point entry into the tx log...
+2016-04-09 20:42:58.808+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Appending check point entry into the tx log completed
+2016-04-09 20:42:58.808+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [56]:  Check pointing completed
+2016-04-09 20:42:58.808+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-09 20:42:58.809+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.

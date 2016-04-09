@@ -40,3 +40,8 @@ RETURN
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
+2. http://www.thejournal.ie/election-2016/constituency/11/
+3. https://en.wikipedia.org/wiki/Parliamentary_constituencies_in_the_Republic_of_Ireland
+4. http://neo4j.com/docs/stable/query-delete.html
+5. http://irishpoliticalmaps.blogspot.ie/2015/06/confirmed-candidates-for-next-general_3.html
+6. 

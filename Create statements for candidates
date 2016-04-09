@@ -18,7 +18,7 @@ create (a:Candidate {Candidate:'John McGuinness',Party:'Fianna Fáil',Constituen
 (q:Candidate {Candidate:'Caoimhghín Ó Caoláin',    Party:'Sinn Féin',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'Yes'}),
 (r:Candidate {Candidate:'Brendan Smith',    Party:'Fianna Fáil',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'Yes'}),
 (s:Candidate {Candidate:'Niamh Smyth',    Party:'Fianna Fáil',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'Yes'}),
-(t:Candidate {Candidate:'Joe O'Reilly',    Party:'Fine Gael',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
+(t:Candidate {Candidate:'Joe O Reilly',    Party:'Fine Gael',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
 (u:Candidate {Candidate:'Kathryn Reilly',    Party:'Sinn Féin',    Constituency:'Cavan–Monaghan'  ,Sex:'F',    Elected:'No'}),
 (v:Candidate {Candidate:'Mike Durkan',    Party:'Fianna Fáil',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
 (w:Candidate {Candidate:'Mary Smyth',    Party:'Independent',    Constituency:'Cavan–Monaghan'  ,Sex:'F',    Elected:'No'}),
@@ -26,8 +26,49 @@ create (a:Candidate {Candidate:'John McGuinness',Party:'Fianna Fáil',Constituen
 (y:Candidate {Candidate:'Mícheál Callaghan',    Party:'Green Party',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
 (z:Candidate {Candidate:'John Wilson',    Party:'Independent',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
 (aa:Candidate {Candidate:'Mick McDermott',    Party:'Direct Democracy',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
-(ab:Candidate {Candidate:'Aoife O'Connell',    Party:'Direct Democracy',    Constituency:'Cavan–Monaghan'  ,Sex:'F',    Elected:'No'}),
+(ab:Candidate {Candidate:'Aoife O Connell',    Party:'Direct Democracy',    Constituency:'Cavan–Monaghan'  ,Sex:'F',    Elected:'No'}),
 (ac:Candidate {Candidate:'Emmett Smith',    Party:'Independent',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
 (ad:Candidate {Candidate:'Jimmy Mee',    Party:'Independent',    Constituency:'Cavan–Monaghan'  ,Sex:'M',    Elected:'No'}),
+
+(ae:Candidate {Candidate:'Timmy Dooley',    Party:'Fianna Fáil',    Constituency:'Clare'  ,Sex:'M',    Elected:'Yes'}),
+(af:Candidate {Candidate:'Michael Harty',    Party:'Independent',    Constituency:'Clare'  ,Sex:'M',    Elected:'Yes'}),
+(ag:Candidate {Candidate:'Pat Breen',    Party:'Fine Gael',    Constituency:'Clare'  ,Sex:'M',    Elected:'Yes'}),
+(ah:Candidate {Candidate:'Joe Carey',    Party:'Fine Gael',    Constituency:'Clare'  ,Sex:'M',    Elected:'Yes'}),
+(ai:Candidate {Candidate:'Michael McDonagh',    Party:'Fianna Fáil',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(aj:Candidate {Candidate:'Michael McNamara',    Party:'Labour Party',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(ak:Candidate {Candidate:'Noeleen Moran',    Party:'Sinn Féin',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(al:Candidate {Candidate:'Anne Norton',    Party:'Independent',    Constituency:'Clare'  ,Sex:'F',    Elected:'No'}),
+(am:Candidate {Candidate:'Clare Colleran Molloy',    Party:'Fianna Fáil',    Constituency:'Clare'  ,Sex:'F',    Elected:'No'}),
+(an:Candidate {Candidate:'Fergal Smith',    Party:'Green Party',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(ao:Candidate {Candidate:'Mary Howard',    Party:'Fine Gael',    Constituency:'Clare'  ,Sex:'F',    Elected:'No'}),
+(ap:Candidate {Candidate:'Ian Lynch',    Party:'Independent',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(aq:Candidate {Candidate:'Niamh O Brien',    Party:'Fís Nua',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(ar:Candidate {Candidate:'Richard Cahill',    Party:'Independent',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(as:Candidate {Candidate:'André Sibo Hakizimana',    Party:'Independent',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+(at:Candidate {Candidate:'Dermot Mulqueen',    Party:'Independent',    Constituency:'Clare'  ,Sex:'M',    Elected:'No'}),
+
+
+(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+(av:Candidate {Candidate:'David Stanton',    Party:'Fine Gael',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+(aw:Candidate {Candidate:'Seán Sherlock',    Party:'Labour Party',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+(ax:Candidate {Candidate:'Pat Buckley',    Party:'Sinn Féin',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+(ay:Candidate {Candidate:'Barbara Ahern',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'F',    Elected:'No'}),
+(az:Candidate {Candidate:'Noel McCarthy',    Party:'Fine Gael',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(ba:Candidate {Candidate:'Tom Barry',    Party:'Fine Gael',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bb:Candidate {Candidate:'Paul Bradford',    Party:'Renua Ireland',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bc:Candidate {Candidate:'Mary Linehan Foley',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'F',    Elected:'No'}),
+(bd:Candidate {Candidate:'Ciara Leonardi Roche',    Party:'AAA–PBP',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(be:Candidate {Candidate:'Kieran McCarthy',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bf:Candidate {Candidate:'Ken Curtin',    Party:'Social Democrats',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bg:Candidate {Candidate:'Natasha Harty',    Party:'Green Party',    Constituency:'Cork East'  ,Sex:'F',    Elected:'No'}),
+(bh:Candidate {Candidate:'Patrick Bullman',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bi:Candidate {Candidate:'Ross Cannon',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+
+(bi:Candidate {Candidate:'Ross Cannon',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+
+
+
+
+
 
 

@@ -44,4 +44,7 @@ RETURN
 3. https://en.wikipedia.org/wiki/Parliamentary_constituencies_in_the_Republic_of_Ireland
 4. http://neo4j.com/docs/stable/query-delete.html
 5. http://irishpoliticalmaps.blogspot.ie/2015/06/confirmed-candidates-for-next-general_3.html
-6. 
+6. https://www.youtube.com/watch?v=bqvDSioHYq8
+7. https://www.youtube.com/watch?v=Go3P73-KV30
+8. https://www.youtube.com/watch?v=Go3P73-KV30
+9. 

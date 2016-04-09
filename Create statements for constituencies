@@ -1,0 +1,2 @@
+CREATE (h:Constituencies { Constituency:'Cork South–West', Population :'82,952', Parlamentery_Seats:'3'}),
+(i:Constituencies { Constituency:'Donegal', Population :'152,358', Parlamentery_Seats:'5'})

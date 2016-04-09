@@ -64,7 +64,21 @@ create (a:Candidate {Candidate:'John McGuinness',Party:'Fianna Fáil',Constituen
 (bh:Candidate {Candidate:'Patrick Bullman',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
 (bi:Candidate {Candidate:'Ross Cannon',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
 
-(bi:Candidate {Candidate:'Ross Cannon',    Party:'Independent',    Constituency:'Cork East'  ,Sex:'M',    Elected:'No'}),
+(bj:Candidate {Candidate:'Billy Kelleher',    Party:'Fianna Fáil',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'Yes'}),
+(bk:Candidate {Candidate:'Mick Barry',    Party:'AAA–PBP',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'Yes'}),
+(bl:Candidate {Candidate:'Jonathan O Brien',    Party:'Sinn Féin',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'Yes'}),
+(bm:Candidate {Candidate:'Dara Murphy',    Party:'Fine Gael',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'Yes'}),
+(bn:Candidate {Candidate:'Kathleen Lynch',    Party:'Labour Party',    Constituency:'Cork North–Central '  ,Sex:'F',    Elected:'No'}),
+(bo:Candidate {Candidate:'Julie O Leary',    Party:'Fine Gael',    Constituency:'Cork North–Central '  ,Sex:'F',    Elected:'No'}),
+(bp:Candidate {Candidate:'Thomas Gould',    Party:'Sinn Féin',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bq:Candidate {Candidate:'Oliver Moran',    Party:'Green Party',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(br:Candidate {Candidate:'Ted Tynan',    Party:'Workers Party',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bs:Candidate {Candidate:'Paddy O Leary',    Party:'Renua Ireland',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bt:Candidate {Candidate:'Ger Keohane',    Party:'Independent',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bu:Candidate {Candidate:'Thomas Kiely',    Party:'Independent',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bv:Candidate {Candidate:'Mick Murphy',    Party:'Independent',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+(bw:Candidate {Candidate:'Peter O Loughlin',    Party:'Identity Ireland',    Constituency:'Cork North–Central '  ,Sex:'M',    Elected:'No'}),
+
 
 
 

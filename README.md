@@ -35,6 +35,8 @@ Example
 Create statements can also be seen in my files
 ## Queries
 
+Please Read Problems/Mistake section before you continue
+
 The query's I have selected are mostly based on who got elected by filtering though sex or what party the candidate
 belongs to.
 All the queries can be seen as a list or as graph.
@@ -42,7 +44,7 @@ All the queries can be seen as a list or as graph.
 returns all nodes (Constituencies and Candidates) Where a female Candidate has been elected
 
 ```match (n)--(d)where n.Sex="F"and n.Elected="Yes" return d```
-
+(n)--(d) 
 #### Show all Female candidates that have been elected in 2016
 This query retreives the Bacon number of an actor...
 
@@ -71,7 +73,7 @@ Show a graph view of all the elected candidates and the Constituency they are in
 (This does not fully work on my Database since my relationships are not right see explaination below)
 
 ```match (d)-->(n) where  n.Elected="Yes" return n,d```
-
+(n)--(d) is a relationship indicator
 #### Show all candidates that have been elected from the labour Party
 This query retreives the Bacon number of an actor...
 ```match (n) where  n.Party="Labour Party" and n.Elected="Yes" return n```

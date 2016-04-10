@@ -36,53 +36,57 @@ Then explain them one by one in the following sections.
 
 returns all nodes (Constituencies and Candidates) Where a female Candidate has been elected
 
-match (n)--(d)where n.Sex="F"and n.Elected="Yes" return d
+```match (n)--(d)where n.Sex="F"and n.Elected="Yes" return d```
 
 #### Show all Female candidates that have been elected in 2016
 This query retreives the Bacon number of an actor...
 
-```match (n) Where n.Sex="F" and n.Elected="Yes" return n
+```match (n) Where n.Sex="F" and n.Elected="Yes" return n```
 
 Addition to this querie
 List all constituencies where a female candidate has been Elected in wher there are only 3 paralamentary Seats
 
-```match (n),(d) Where n.Sex="F" and n.Elected="Yes" and d.Parlamentery_Seats = "3" return d.Constituency
+```match (n),(d) Where n.Sex="F" and n.Elected="Yes" and d.Parlamentery_Seats = "3" return d.Constituency```
 
 #### List all elected Candidates 
 This query retreives the Bacon number of an actor...
 
-```match (n) Where  n.Elected="Yes" return n.Candidate
+```match (n) Where  n.Elected="Yes" return n.Candidate```
+
 Addition 1 to the querie
+
 List all the candidates that were ellected and show there constituency
-```match (n),(d) Where  n.Elected="Yes" return n.Candidate,d.Constituency
+
+```match (n),(d) Where  n.Elected="Yes" return n.Candidate,d.Constituency```
+
 Addition 2
 Show a graph view of all the elected candidates and the Constituency they are in
 (This does not fully work on my Database since my relationships are not right see explaination below)
-```match (d)-->(n) where  n.Elected="Yes" return n,d
+```match (d)-->(n) where  n.Elected="Yes" return n,d```
 
 #### Show all candidates that have been elected from the labour Party
 This query retreives the Bacon number of an actor...
-```match (n) where  n.Party="Labour Party" and n.Elected="Yes" return n
+```match (n) where  n.Party="Labour Party" and n.Elected="Yes" return n```
 Addition
 List all Constituencies and Elected labour candidates
-```match (n),(d) where  n.Party="Labour Party" and n.Elected="Yes" return n,d.Constituency
+```match (n),(d) where  n.Party="Labour Party" and n.Elected="Yes" return n,d.Constituency```
 
 addition
 show all candidates elected for laber and the constituency they were elected in as a graph
-```match (n)-->(d) where  n.Party="Labour Party" and n.Elected="Yes" return n.Candidate,d
+```match (n)-->(d) where  n.Party="Labour Party" and n.Elected="Yes" return n.Candidate,d```
 #### Problems / Mistakes
 In creating the Database I have made a by naming the name of the constituency of the constituency "constituency".
 
-```CREATE (j:Constituencies { Constituency:'Dublin Bay North', Population :'146,512', Parlamentery_Seats:'5'}),
+```CREATE (j:Constituencies { Constituency:'Dublin Bay North', Population :'146,512', Parlamentery_Seats:'5'}),```
 
-```
+
 This mistake has resulted in a problem with the relationships since the candidates constituencies are also called constituency.
 
-```(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+```(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),```
 
 The problem is that now when I create a relationship:
 
-```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return n,d,r
+```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return n,d,r```
 
 Relationships are created that are not wanted. Every candidate has a relationship with every other candidate  who come from the same 
 constituency.
@@ -101,4 +105,7 @@ Cork North-Central is the only node that displays relationships correctly.
 6. https://www.youtube.com/watch?v=bqvDSioHYq8
 7. https://www.youtube.com/watch?v=Go3P73-KV30
 8. https://www.youtube.com/watch?v=Go3P73-KV30
-9. 
+9. https://www.lynda.com/Neo4j-tutorials/Using-paths-traverse-multiple-nodes/155604/175278-4.html?
+10. https://en.wikipedia.org/wiki/Politics_of_the_Republic_of_Ireland
+11. https://github.com/neo4j-examples/asset_portal/tree/episode6
+12. 

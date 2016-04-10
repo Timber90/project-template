@@ -1,5 +1,5 @@
 # Irish Constituencies Neo4j Database
-###### Student name, G00123456
+###### Tim Daiber, G00260494
 
 ## Introduction
 My Project is about creating a database for the 2016 election in Ireland.

@@ -11,6 +11,7 @@ Data like the associated party of the candidate is stored the there gender/sex a
 
 ## Database
 The database is a nea4j database. It is represented in graphs or rows.
+Nodes are created using something like a create statement example below.
 To create the Databse I have used statement like bellow:
 
 #### Create Statement Constituencies
@@ -30,23 +31,27 @@ Example
 Summarise your three queries here.
 Then explain them one by one in the following sections.
 
-#### Query one title
-This query retreives the Bacon number of an actor...
-```cypher
-MATCH
-	(Bacon)
-RETURN
-	Bacon;
-```
+returns all nodes (Constituencies and Candidates) Where a female Candidate has been elected
+match (n)--(d)where n.Sex="F"and n.Elected="Yes" return d
 
-#### Query two title
+#### Show all Female candidates that have been elected in 2016
 This query retreives the Bacon number of an actor...
-```cypher
-MATCH
-	(Bacon)
-RETURN
-	Bacon;
-```
+```match (n) Where n.Sex="F" and n.Elected="Yes" return n
+
+Addition to this querie
+List all constituencies where a female candidate has been Elected in wher there are only 3 paralamentary Seats
+```match (n),(d) Where n.Sex="F" and n.Elected="Yes" and d.Parlamentery_Seats = "3" return d.Constituency
+
+#### List all elected Candidates 
+This query retreives the Bacon number of an actor...
+```match (n) Where  n.Elected="Yes" return n.Candidate
+Addition to the querie
+List all the candidates that were ellected and show there constituency
+```match (n),(d) Where  n.Elected="Yes" return n.Candidate,d.Constituency
+Addition
+Show a graph view of all the elected candidates and the Constituency they are in
+(This does not fully work on my Database since my relationships are not right see explaination below)
+```match (d)-->(n) where  n.Elected="Yes" return n,d
 
 #### Query three title
 This query retreives the Bacon number of an actor...
@@ -76,6 +81,7 @@ To resolve this mistake I would have to change either the candidates or the cons
 Like Name.
 But to do so I would have to recreate the hole database and since I did not save all the create statements I do not have time to resove this error.
 
+Cork North-Central is the only node that displays relationships correctly.
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.

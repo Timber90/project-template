@@ -32,7 +32,7 @@ Example
 
 ```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r```
 
-
+Create statements can also be seen in my files
 ## Queries
 
 The query's I have selected are mostly based on who got elected by filtering though sex or what party the candidate

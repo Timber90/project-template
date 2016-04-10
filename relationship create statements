@@ -1,1 +1,3 @@
-match (n{Constituency:"Carlow–Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r,d,n
+match (n{Constituency:"Carlow–Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r,d
+
+match (n{Constituency:"Cavan–Monaghan"}), (d{Constituency:"Cavan–Monaghan"}) create (n)-[r:FROM]->(d) return r,d

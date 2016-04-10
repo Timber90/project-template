@@ -1745,3 +1745,13 @@ RETURN r;
 2016-04-10 11:56:03.871+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [70]:  Check pointing completed
 2016-04-10 11:56:03.871+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2016-04-10 11:56:03.871+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-04-10 12:07:23.934+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Starting check pointing...
+2016-04-10 12:07:23.934+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Starting store flush...
+2016-04-10 12:07:23.934+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 71 to [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.a], from [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.b].
+2016-04-10 12:07:23.940+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 71 to [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.a], from [E:\User Tim\Documents\Graph therory Project\project-template\constituencies.graphdb\neostore.counts.db.b].
+2016-04-10 12:07:23.945+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Store flush completed
+2016-04-10 12:07:23.945+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Starting appending check point entry into the tx log...
+2016-04-10 12:07:23.946+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Appending check point entry into the tx log completed
+2016-04-10 12:07:23.946+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [71]:  Check pointing completed
+2016-04-10 12:07:23.946+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-04-10 12:07:23.946+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.

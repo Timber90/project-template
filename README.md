@@ -16,14 +16,17 @@ To create the Databse I have used statement like bellow:
 
 #### Create Statement Constituencies
 Example
+
 ```(j:Constituencies { Constituency:'Dublin Bay North', Population :'146,512', Parlamentery_Seats:'5'}),
 
 #### Create Statement Candidate
 Example
+
 ```(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
 
 #### Relationship create statement
 Example
+
 ```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r
 
 
@@ -32,18 +35,22 @@ Summarise your three queries here.
 Then explain them one by one in the following sections.
 
 returns all nodes (Constituencies and Candidates) Where a female Candidate has been elected
+
 match (n)--(d)where n.Sex="F"and n.Elected="Yes" return d
 
 #### Show all Female candidates that have been elected in 2016
 This query retreives the Bacon number of an actor...
+
 ```match (n) Where n.Sex="F" and n.Elected="Yes" return n
 
 Addition to this querie
 List all constituencies where a female candidate has been Elected in wher there are only 3 paralamentary Seats
+
 ```match (n),(d) Where n.Sex="F" and n.Elected="Yes" and d.Parlamentery_Seats = "3" return d.Constituency
 
 #### List all elected Candidates 
 This query retreives the Bacon number of an actor...
+
 ```match (n) Where  n.Elected="Yes" return n.Candidate
 Addition 1 to the querie
 List all the candidates that were ellected and show there constituency

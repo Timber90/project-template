@@ -2,10 +2,29 @@
 ###### Student name, G00123456
 
 ## Introduction
-Give a summary here of what your project is about.
+My Project is about creating a database for the 2016 election in Ireland.
+It includes the 40 constituencies in ireland and all the candidates what ran for office in the individual 
+Constituency.
+Data like the associated party of the candidate is stored the there gender/sex and if they were elected or not.
+
+
 
 ## Database
-Explain how you created your database, and how information is represented in it.
+The database is a nea4j database. It is represented in graphs or rows.
+To create the Databse I have used statement like bellow:
+
+#### Create Statement Constituencies
+Example
+```(j:Constituencies { Constituency:'Dublin Bay North', Population :'146,512', Parlamentery_Seats:'5'}),
+
+#### Create Statement Candidate
+Example
+```(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+
+#### Relationship create statement
+Example
+```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r
+
 
 ## Queries
 Summarise your three queries here.
@@ -37,6 +56,26 @@ MATCH
 RETURN
 	Bacon;
 ```
+#### Problems / Mistakes
+In creating the Database I have made a by naming the name of the constituency of the constituency "constituency".
+
+```CREATE (j:Constituencies { Constituency:'Dublin Bay North', Population :'146,512', Parlamentery_Seats:'5'}),
+
+```
+This mistake has resulted in a problem with the relationships since the candidates constituencies are also called constituency.
+
+```(au:Candidate {Candidate:'Kevin O Keeffe',    Party:'Fianna Fáil',    Constituency:'Cork East'  ,Sex:'M',    Elected:'Yes'}),
+
+The problem is that now when I create a relationship:
+
+```match (n{Constituency:"Carlow-Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return n,d,r
+
+Relationships are created that are not wanted. Every candidate has a relationship with every other candidate  who come from the same 
+constituency.
+To resolve this mistake I would have to change either the candidates or the constituencies "Constituesny" to another entry
+Like Name.
+But to do so I would have to recreate the hole database and since I did not save all the create statements I do not have time to resove this error.
+
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.

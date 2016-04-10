@@ -35,8 +35,9 @@ Example
 
 ## Queries
 
-Summarise your three queries here.
-Then explain them one by one in the following sections.
+The query's I have selected are mostly based on who got elected by filtering though sex or what party the candidate
+belongs to.
+All the queries can be seen as a list or as graph.
 
 returns all nodes (Constituencies and Candidates) Where a female Candidate has been elected
 

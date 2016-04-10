@@ -45,22 +45,24 @@ List all constituencies where a female candidate has been Elected in wher there 
 #### List all elected Candidates 
 This query retreives the Bacon number of an actor...
 ```match (n) Where  n.Elected="Yes" return n.Candidate
-Addition to the querie
+Addition 1 to the querie
 List all the candidates that were ellected and show there constituency
 ```match (n),(d) Where  n.Elected="Yes" return n.Candidate,d.Constituency
-Addition
+Addition 2
 Show a graph view of all the elected candidates and the Constituency they are in
 (This does not fully work on my Database since my relationships are not right see explaination below)
 ```match (d)-->(n) where  n.Elected="Yes" return n,d
 
-#### Query three title
+#### Show all candidates that have been elected from the labour Party
 This query retreives the Bacon number of an actor...
-```cypher
-MATCH
-	(Bacon)
-RETURN
-	Bacon;
-```
+```match (n) where  n.Party="Labour Party" and n.Elected="Yes" return n
+Addition
+List all Constituencies and Elected labour candidates
+```match (n),(d) where  n.Party="Labour Party" and n.Elected="Yes" return n,d.Constituency
+
+addition
+show all candidates elected for laber and the constituency they were elected in as a graph
+```match (n)-->(d) where  n.Party="Labour Party" and n.Elected="Yes" return n.Candidate,d
 #### Problems / Mistakes
 In creating the Database I have made a by naming the name of the constituency of the constituency "constituency".
 

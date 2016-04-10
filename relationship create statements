@@ -1,0 +1,1 @@
+match (n{Constituency:"Carlow–Kilkenny"}), (d{Constituency:"Carlow–Kilkenny"}) create (n)-[r:FROM]->(d) return r,d,n
